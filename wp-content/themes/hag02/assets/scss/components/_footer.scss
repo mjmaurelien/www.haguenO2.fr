@@ -1,0 +1,31 @@
+.footer{
+    background: #1b1b1b;
+    margin-top: 50px;
+    padding: 10px;
+	    div{
+	        margin-top: 20px;
+	    }
+	    h4{
+	        color:white;
+	        font-size: 18px;
+	        font-family: 'Roboto',Arial, sans-serif;
+	        font-weight: 700;
+	    }
+	    a{
+	        text-decoration: none;
+	        p{
+	        font-size: 15px;
+	        font-family: 'Roboto',Arial, sans-serif;
+	        font-weight: 400;
+	        color: white;
+	        display: block;
+	        width: auto;
+	        margin: 0 0 10px 0;
+	        padding: 0 0 0 20px;
+	        &:hover{
+	            -webkit-transition:all .2s ease-in;
+	            color:$bleu-light;
+	        }
+	        }
+	    }
+}
