@@ -94,7 +94,7 @@ get_header(); ?>
 							<div class="row">
 
 								<?php
-									$args = array( 'post_type' => 'magasin', 'posts_per_page' => 22, 'orderby' =>'date','order' => 'DESC' );
+									$args = array( 'post_type' => 'magasin', 'posts_per_page' => 50, 'orderby' =>'date','order' => 'DESC' );
 									$loop = new WP_Query( $args );
 									while ( $loop->have_posts() ) : $loop->the_post();
 									$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail' );

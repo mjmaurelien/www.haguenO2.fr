@@ -18,9 +18,7 @@ function portfolio_posts_type(){
             'title',
             'editor',
             'thumbnail',
-            'excerpt',
-            'comments',
-            'revisions'
+
         );
         $rewrite_portfolio_post_type_array = array(
             'slug'          =>  _x('portfolio', 'Pour les collections', 'foundationpress'),

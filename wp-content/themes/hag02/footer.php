@@ -12,7 +12,7 @@
 
 		</section>
 		<section class="footer text-center">
-			<div class="row text-left"id="petit">
+			<div class="row text-left" id="petit">
 				<div class="large-4 small-12 columns">
 					<h4><i class="fa fa-map-o" aria-hidden="true"></i> Plan du site :</h4>
 					<a href="<?php echo get_page_link(4); ?>"><p>Commerçants</p></a>

@@ -21,7 +21,8 @@ get_header(); ?>
     </div>
         <div class="row background_blue" id="full">
           <div class="small-12 medium-12 large-12 columns ">
-            <div class="row bandeau">
+
+            <div class="row bandeau hide-for-small-only">
               <?php
                 $args = array( 'post_type' => 'bandeau', 'posts_per_page' => 1, 'orderby' =>'date','order' => 'DESC' );
                 $loop = new WP_Query( $args );
@@ -45,10 +46,10 @@ get_header(); ?>
             <?php endwhile; ?>
             <?php wp_reset_query(); ?>
             </div>
-            <div class="row">
+            <div class="row bloc">
 
               <?php
-                $args = array( 'post_type' => 'portfolio', 'posts_per_page' => 22, 'orderby' =>'date','order' => 'DESC' );
+                $args = array( 'post_type' => 'portfolio', 'posts_per_page' => 50, 'orderby' =>'date','order' => 'DESC' );
                 $loop = new WP_Query( $args );
                 while ( $loop->have_posts() ) : $loop->the_post();
                 $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail' );
@@ -56,7 +57,7 @@ get_header(); ?>
               ?>
 
 
-                <div class=" large-3 medium-6 small-12 columns no-gutter">
+                <div class=" large-3 medium-4 small-12  columns no-gutter">
                   <div class="image_offre">
                     <a href="<?php the_field('lien_offres')?>" target="_blank">
                     <img src="<?php echo $url ?>" alt=""/>
